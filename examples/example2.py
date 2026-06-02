@@ -10,7 +10,7 @@ As a second, even more obvious tell, we also rename it visibly.
 from tr2 import Tr2
 
 if __name__ == '__main__':
-    t = Tr2('tr2\\Misc.tr2')
+    t = Tr2('../tr2/Misc.tr2')
     ID = 29  # 映画
 
     # 1) crater its popularity so the graph/number is obviously wrong

@@ -41,7 +41,7 @@ This is what lets the game answer "how many results for term A and term B."
 
 from tr2 import Tr2
 
-t = Tr2('tr2\\Misc.tr2')
+t = Tr2('../tr2/Misc.tr2')
 
 # 1) Change a word's popularity score (scalar; safe, same-length edit).
 #    SINGLEHITS is keyed by the same id as WordList.
