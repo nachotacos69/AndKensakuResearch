@@ -9,8 +9,8 @@ This document covers
 4. [Data Example & Possible Custom Content](#4-data-structure-example-0xx_gameresrz)
 
 ## 1. What RES files are
-Shift's proprietary format on some games, but commonly seen in GOD EATER games that they made (before GOD EATER 3).
-What And-Kensaku uses is seems to be GOD EATER 2 TRIAL uses *(mix of GOD EATER BURST and early GOD EATER 2 `*.res` format)*. Despite the game targeting big-endian PowerPC hardware, all values/data are still little-endian. Note that the res files compressed in LZ11 `(0x11)`, decompress the res file first to make it understandable.
+Shift's proprietary format on some games, but this is commonly seen in GOD EATER games that they made (before GOD EATER 3).
+What And-Kensaku (*.res) file uses is related to the an earlier version of GOD EATER *(mix of GOD EATER BURST and early GOD EATER 2 `*.res` format)* but without package.rdp or another separate containers, and all are stored in the res file itself. Despite the game targeting big-endian PowerPC hardware, all values/data are still little-endian. Note that the res files compressed in LZ11 `(0x11)`, decompress the res file first to make it understandable.
 
 
 ## 2. Container format
@@ -79,5 +79,9 @@ What And-Kensaku uses is seems to be GOD EATER 2 TRIAL uses *(mix of GOD EATER B
 ```
 
 ## Possible Custom Content
-- If you think you can add a file in a RES file. Yes, you can add files if you want to create your own custom content or any kind of modding. but it'll take lots of time if you don't have an automation tool for that to sort out, and you'll need to do manual HEX editing for that.
-- Some files within RES file usually have some specific calling module on modules. they mention the modules but in a specific plain text and showing the directory of that module.
+- If you think you can add a file(s) in a RES file. Yes, you can add files if you want to create your own custom content or any kind of modding. but it'll take lots of time if you don't have an automation tool for that to sort out, and you'll need to do manual HEX editing for that.
+- Some files within RES file usually have some specific calling module by mentioning the modules in a specific plain text and showing the directory path of that module.
+
+
+## Status of the documentation
+Overall, everything is okay. the tool is already out there and the source code only needs a few minor edits and it will support the `*.res` file And-Kensaku uses.
